@@ -2,9 +2,9 @@
 
 **Initiative Solidaire Locale** — Encouraging mutual aid between residents in Marseille 11e & 12e.
 
-**Live:** https://amour-toujours.vercel.app
+**Live:** https://amour-toujours.le-village-marseille.fr
 
-**Portal:** https://le-village-portal.vercel.app
+**Portal:** https://le-village-marseille.fr
 
 ---
 
@@ -38,7 +38,7 @@ npm run dev    # http://localhost:3000
 
 | Project | URL | Repo |
 |---------|-----|------|
-| Portal | [le-village-portal.vercel.app](https://le-village-portal.vercel.app) | [kymmy/le-village-portal](https://github.com/kymmy/le-village-portal) |
-| Entourage | [tribu.vercel.app](https://tribu.vercel.app) | [kymmy/tribu-app](https://github.com/kymmy/tribu-app) |
-| Little Movers | [little-movers.vercel.app](https://little-movers.vercel.app) | [kymmy/little-movers](https://github.com/kymmy/little-movers) |
-| Amour Toujours (this) | [amour-toujours.vercel.app](https://amour-toujours.vercel.app) | This repo |
+| Portal | [le-village-marseille.fr](https://le-village-marseille.fr) | [kymmy/le-village-portal](https://github.com/kymmy/le-village-portal) |
+| Entourage | [tribu.le-village-marseille.fr](https://tribu.le-village-marseille.fr) | [kymmy/tribu-app](https://github.com/kymmy/tribu-app) |
+| Little Movers | [little-movers.le-village-marseille.fr](https://little-movers.le-village-marseille.fr) | [kymmy/little-movers](https://github.com/kymmy/little-movers) |
+| Amour Toujours (this) | [amour-toujours.le-village-marseille.fr](https://amour-toujours.le-village-marseille.fr) | This repo |
