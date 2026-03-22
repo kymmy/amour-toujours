@@ -64,12 +64,13 @@ export default function AmourToujoursPage() {
 
           <div className="flex items-center gap-3">
             <LanguageToggle />
-            <span
-              className="hidden sm:inline-block text-xs font-semibold bg-village-green text-white px-3 py-1 rounded-full"
+            <a
+              href="https://le-village-marseille.fr"
+              className="hidden sm:inline-block text-xs font-semibold bg-village-green text-white px-3 py-1 rounded-full hover:opacity-90 transition-opacity"
               style={{ fontFamily: "var(--font-body)" }}
             >
               Le Village
-            </span>
+            </a>
           </div>
         </div>
       </nav>
