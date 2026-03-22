@@ -54,7 +54,7 @@ export default function AmourToujoursPage() {
       <nav className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="max-w-4xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
           <a
-            href="https://le-village.fr"
+            href="https://le-village-marseille.fr"
             className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             style={{ fontFamily: "var(--font-body)" }}
           >
