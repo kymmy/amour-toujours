@@ -74,7 +74,7 @@ export default function CafeEntrepreneursPage() {
                   {t("Vendredi 11 avril 2026", "Friday, April 11th 2026")}
                 </p>
                 <p className="text-base md:text-lg text-white/80 mt-1">
-                  9h30 — 11h00 · Café Marrou
+                  9h30 — 11h00 · <a href="https://maps.app.goo.gl/JnEovpdt9ZjNCPgd6" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">Café Marrou</a>
                 </p>
               </div>
               <div className="pt-4">
@@ -138,7 +138,12 @@ export default function CafeEntrepreneursPage() {
           </div>
 
           {/* Location */}
-          <div className="rounded-2xl bg-card border border-border p-6 text-center shadow-sm">
+          <a
+            href="https://maps.app.goo.gl/JnEovpdt9ZjNCPgd6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-2xl bg-card border border-border p-6 text-center shadow-sm hover:shadow-md transition-shadow"
+          >
             <MapPin className="w-6 h-6 text-amour-red mx-auto mb-3" />
             <p
               className="font-semibold text-foreground text-sm"
@@ -147,12 +152,12 @@ export default function CafeEntrepreneursPage() {
               Café Marrou
             </p>
             <p
-              className="text-muted-foreground text-xs mt-1"
+              className="text-muted-foreground text-xs mt-1 underline"
               style={{ fontFamily: "var(--font-body)" }}
             >
               Saint-Barnabé, Marseille
             </p>
-          </div>
+          </a>
 
           {/* Audience */}
           <div className="rounded-2xl bg-card border border-border p-6 text-center shadow-sm">
