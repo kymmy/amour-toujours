@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Heart, Coffee, MapPin, Clock, Users, Calendar } from "lucide-react";
@@ -45,12 +46,15 @@ export default function CafeEntrepreneursPage() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="w-full"
         >
-          <div className="relative w-full overflow-hidden rounded-2xl shadow-xl bg-gradient-to-br from-amour-red to-rose-800 p-8 md:p-12 text-white text-center">
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-6 left-6 w-32 h-32 rounded-full border-2 border-white/30" />
-              <div className="absolute bottom-10 right-10 w-48 h-48 rounded-full border-2 border-white/20" />
-              <div className="absolute top-1/2 left-1/3 w-20 h-20 rounded-full border border-white/20" />
-            </div>
+          <div className="relative w-full overflow-hidden rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
+            <Image
+              src="/cafe-saint-barnabe.jpg"
+              alt={t("Église Saint-Barnabé", "Saint-Barnabé Church")}
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-amour-red/85 to-rose-900/80" />
             <div className="relative z-10 space-y-4 py-6 md:py-10">
               <p
                 className="text-sm md:text-base font-semibold tracking-widest uppercase text-white/80"
