@@ -48,7 +48,7 @@ export default function CafeEntrepreneursPage() {
         >
           <div className="relative w-full overflow-hidden rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
             <Image
-              src="/cafe-saint-barnabe.jpg"
+              src="/cafe-saint-barnabe.png"
               alt={t("Église Saint-Barnabé", "Saint-Barnabé Church")}
               fill
               className="object-cover"
