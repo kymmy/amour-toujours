@@ -3,10 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Heart, Coffee, MapPin, Clock, Users } from "lucide-react";
+import { Heart, Coffee, MapPin, Clock, Users, Calendar } from "lucide-react";
 import { ArrowLeft } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { LanguageToggle } from "@/components/language-toggle";
+import { QRCodeSVG } from "qrcode.react";
 
 export default function CafeEntrepreneursPage() {
   const { lang, t } = useLanguage();
@@ -53,8 +54,8 @@ export default function CafeEntrepreneursPage() {
                   : "/cafe-entrepreneurs-en.jpg"
               }
               alt={t(
-                "Café des Entrepreneurs Solidaires",
-                "Solidarity Entrepreneurs Café"
+                "Cercle des Entrepreneurs Solidaires",
+                "Solidarity Entrepreneurs Circle"
               )}
               fill
               className="object-cover"
@@ -75,8 +76,8 @@ export default function CafeEntrepreneursPage() {
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t(
-              "Café des Entrepreneurs Solidaires",
-              "Solidarity Entrepreneurs Café"
+              "Cercle des Entrepreneurs Solidaires",
+              "Solidarity Entrepreneurs Circle"
             )}
           </h1>
           <p
@@ -97,6 +98,23 @@ export default function CafeEntrepreneursPage() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="grid gap-6 md:grid-cols-3"
         >
+          {/* Date */}
+          <div className="rounded-2xl bg-card border border-border p-6 text-center shadow-sm">
+            <Calendar className="w-6 h-6 text-amour-red mx-auto mb-3" />
+            <p
+              className="font-semibold text-foreground text-sm"
+              style={{ fontFamily: "var(--font-body)" }}
+            >
+              {t("Vendredi 11 avril 2026", "Friday, April 11th 2026")}
+            </p>
+            <p
+              className="text-muted-foreground text-xs mt-1"
+              style={{ fontFamily: "var(--font-body)" }}
+            >
+              {t("9h30 — 11h00", "9:30 AM — 11:00 AM")}
+            </p>
+          </div>
+
           {/* Location */}
           <div className="rounded-2xl bg-card border border-border p-6 text-center shadow-sm">
             <MapPin className="w-6 h-6 text-amour-red mx-auto mb-3" />
@@ -111,23 +129,6 @@ export default function CafeEntrepreneursPage() {
               style={{ fontFamily: "var(--font-body)" }}
             >
               Saint-Barnabé, Marseille
-            </p>
-          </div>
-
-          {/* Time */}
-          <div className="rounded-2xl bg-card border border-border p-6 text-center shadow-sm">
-            <Clock className="w-6 h-6 text-amour-red mx-auto mb-3" />
-            <p
-              className="font-semibold text-foreground text-sm"
-              style={{ fontFamily: "var(--font-body)" }}
-            >
-              {t("6 mars", "March 6th")}
-            </p>
-            <p
-              className="text-muted-foreground text-xs mt-1"
-              style={{ fontFamily: "var(--font-body)" }}
-            >
-              {t("À partir de 9h30", "From 9:30 AM")}
             </p>
           </div>
 
@@ -149,6 +150,79 @@ export default function CafeEntrepreneursPage() {
                 "Free — just show up!"
               )}
             </p>
+          </div>
+        </motion.div>
+
+        {/* ── Programme ────────────────────────────────────────── */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          <div className="bg-amour-red rounded-2xl p-6 md:p-8 text-white">
+            <div className="flex items-center gap-3 mb-6">
+              <Clock className="w-6 h-6" />
+              <h2
+                className="text-xl md:text-2xl font-bold"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                {t("Programme", "Schedule")}
+              </h2>
+            </div>
+
+            <div
+              className="space-y-6 text-sm md:text-base leading-relaxed"
+              style={{ fontFamily: "var(--font-body)" }}
+            >
+              {/* 9h30 - 10h */}
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-24 font-bold text-white/90">
+                  9h30 — 10h
+                </div>
+                <div>
+                  <p className="font-semibold">{t("Café libre", "Open coffee")}</p>
+                  <p className="text-white/80 mt-1">
+                    {t(
+                      "Accueil convivial autour d'un café et viennoiseries. L'occasion de se retrouver et de faire connaissance.",
+                      "Friendly welcome over coffee and pastries. A chance to catch up and meet new people."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* 10h - 11h */}
+              <div className="border-t border-white/20 pt-6 flex gap-4">
+                <div className="flex-shrink-0 w-24 font-bold text-white/90">
+                  10h — 11h
+                </div>
+                <div>
+                  <p className="font-semibold">
+                    {t(
+                      "Présentation : Créer son association",
+                      "Talk: Starting a non-profit"
+                    )}
+                  </p>
+                  <p className="text-white/80 mt-1">
+                    {t(
+                      "Charlène, fondatrice de l'association BabySocial Club, partage son expérience et ses conseils pour créer et structurer une association.",
+                      "Charlène, founder of the BabySocial Club association, shares her experience and advice on creating and structuring a non-profit."
+                    )}
+                  </p>
+                  <a
+                    href="https://www.instagram.com/babysocialclubmarseille/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-3 text-sm font-semibold text-white bg-white/20 hover:bg-white/30 transition-colors px-4 py-2 rounded-full"
+                  >
+                    <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                    @babysocialclubmarseille
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.div>
 
@@ -201,65 +275,61 @@ export default function CafeEntrepreneursPage() {
                   "Step out for a coffee! Meet other professionals from the neighbourhood and break the isolation of remote work."
                 )}
               </li>
+              <li>
+                <span className="font-bold text-amour-red">
+                  {t("Associatifs : ", "Non-profit leaders: ")}
+                </span>
+                {t(
+                  "Vous portez ou souhaitez créer une association ? Venez échanger avec Charlène et d'autres acteurs engagés du quartier.",
+                  "Running or thinking of starting a non-profit? Come exchange with Charlène and other engaged local actors."
+                )}
+              </li>
             </ul>
           </div>
         </motion.div>
 
-        {/* ── What to expect ────────────────────────────────────── */}
+        {/* ── QR Code — Rejoindre le groupe ────────────────────── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <div className="bg-amour-red rounded-2xl p-6 md:p-8 text-white">
+          <div className="rounded-2xl bg-card border border-border p-6 md:p-8 shadow-sm text-center">
             <h2
-              className="text-xl md:text-2xl font-bold mb-6"
+              className="text-xl md:text-2xl font-bold text-foreground mb-2"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              {t("Au programme", "What to expect")}
+              {t("Rejoignez le groupe", "Join the group")}
             </h2>
-
-            <ul
-              className="space-y-3 text-sm md:text-base leading-relaxed"
+            <p
+              className="text-muted-foreground text-sm mb-6"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              <li>
-                ☕{" "}
-                {t(
-                  "Café et viennoiseries offerts pour bien commencer la journée",
-                  "Complimentary coffee and pastries to start the day right"
-                )}
-              </li>
-              <li>
-                💬{" "}
-                {t(
-                  "Tour de table : chacun se présente et partage ses projets en cours",
-                  "Round table: everyone introduces themselves and shares their current projects"
-                )}
-              </li>
-              <li>
-                🤝{" "}
-                {t(
-                  "Échanges libres et mise en relation entre participants",
-                  "Open exchanges and networking between participants"
-                )}
-              </li>
-              <li>
-                🌍{" "}
-                {t(
-                  "Discussion sur les opportunités locales et les besoins du quartier",
-                  "Discussion on local opportunities and neighbourhood needs"
-                )}
-              </li>
-              <li>
-                ❤️{" "}
-                {t(
-                  "Un moment convivial pour renforcer les liens de solidarité",
-                  "A friendly moment to strengthen solidarity bonds"
-                )}
-              </li>
-            </ul>
+              {t(
+                "Scannez le QR code ou cliquez sur le lien pour rejoindre le groupe sur Tribu et ne manquer aucun événement.",
+                "Scan the QR code or click the link to join the group on Tribu and never miss an event."
+              )}
+            </p>
+
+            <div className="flex justify-center mb-6">
+              <div className="bg-white p-4 rounded-xl shadow-sm inline-block">
+                <QRCodeSVG
+                  value="https://tribu.le-village-marseille.fr/groups/join/3M7GV2"
+                  size={180}
+                  level="M"
+                  fgColor="#cc0000"
+                />
+              </div>
+            </div>
+
+            <a
+              href="https://tribu.le-village-marseille.fr/groups/join/3M7GV2"
+              className="inline-flex items-center gap-2 bg-amour-red text-white font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
+              style={{ fontFamily: "var(--font-body)" }}
+            >
+              {t("Rejoindre le groupe sur Tribu", "Join the group on Tribu")}
+            </a>
           </div>
         </motion.div>
 
