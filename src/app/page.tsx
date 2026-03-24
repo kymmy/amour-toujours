@@ -213,15 +213,15 @@ export default function AmourToujoursPage() {
                   className="text-sm text-muted-foreground mb-1"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
-                  {t("Noël & Pâques", "Christmas & Easter")}
+                  {t("Période de Noël", "Christmas period")}
                 </p>
                 <p
                   className="text-sm text-foreground leading-relaxed"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
                   {t(
-                    "Des bacs roses installés chez les commerçants partenaires du quartier pour collecter des dons (jouets, vêtements, produits d'hygiène) redistribués aux familles.",
-                    "Pink bins placed in partner shops throughout the neighbourhood to collect donations (toys, clothing, hygiene products) redistributed to families."
+                    "Chaque année à Noël, des bacs roses sont installés chez les commerçants partenaires du quartier pour collecter des dons (jouets, vêtements, produits d'hygiène) redistribués aux familles dans le besoin.",
+                    "Every year at Christmas, pink bins are placed in partner shops throughout the neighbourhood to collect donations (toys, clothing, hygiene products) redistributed to families in need."
                   )}
                 </p>
               </Card>
@@ -418,8 +418,8 @@ export default function AmourToujoursPage() {
                 </li>
                 <li>
                   {t(
-                    "Déposez vos dons dans les bacs roses chez les commerçants partenaires pendant les périodes de collecte.",
-                    "Drop off your donations in the pink bins at partner shops during collection periods."
+                    "Déposez vos dons dans les bacs roses chez les commerçants partenaires pendant la période de Noël.",
+                    "Drop off your donations in the pink bins at partner shops during the Christmas period."
                   )}
                 </li>
                 <li>
