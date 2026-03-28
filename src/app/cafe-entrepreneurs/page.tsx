@@ -75,7 +75,7 @@ export default function CafeEntrepreneursPage() {
               <div className="w-16 h-0.5 bg-white/50 mx-auto" />
               <div style={{ fontFamily: "var(--font-body)" }}>
                 <p className="text-lg md:text-2xl font-bold">
-                  {t("Vendredi 11 avril 2026", "Friday, April 11th 2026")}
+                  {t("Vendredi 10 avril 2026", "Friday, April 10th 2026")}
                 </p>
                 <p className="text-base md:text-lg text-white/80 mt-1">
                   9h30 — 11h00 · <a href="https://maps.app.goo.gl/JnEovpdt9ZjNCPgd6" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">Café Marrou</a>
@@ -131,7 +131,7 @@ export default function CafeEntrepreneursPage() {
               className="font-semibold text-foreground text-sm"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              {t("Vendredi 11 avril 2026", "Friday, April 11th 2026")}
+              {t("Vendredi 10 avril 2026", "Friday, April 10th 2026")}
             </p>
             <p
               className="text-muted-foreground text-xs mt-1"

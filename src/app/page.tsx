@@ -258,7 +258,7 @@ export default function AmourToujoursPage() {
                   className="inline-flex items-center gap-1 bg-amour-red text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amour-red/90 transition-colors"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
-                  {t("☕ Prochain café — 6 mars", "☕ Next café — March 6th")}
+                  {t("☕ Prochain café — 10 avril", "☕ Next café — April 10th")}
                 </Link>
               </Card>
 
