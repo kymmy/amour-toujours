@@ -190,7 +190,7 @@ export default function AmourToujoursPage() {
                   {t("Été", "Summer")}
                 </p>
                 <p
-                  className="text-sm text-foreground leading-relaxed"
+                  className="text-sm text-foreground leading-relaxed mb-4"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
                   {t(
@@ -198,6 +198,13 @@ export default function AmourToujoursPage() {
                     "A community dinner open to all neighbourhood residents to share a meal, meet one another, and raise funds for families in need."
                   )}
                 </p>
+                <Link
+                  href="/diner-solidaire"
+                  className="inline-flex items-center gap-1 bg-amour-red text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amour-red/90 transition-colors"
+                  style={{ fontFamily: "var(--font-body)" }}
+                >
+                  {t("🍽️ Samedi 6 juin — Parc de la Moline", "🍽️ Saturday June 6th — Parc de la Moline")}
+                </Link>
               </Card>
 
               {/* Collecte Rose */}
@@ -316,6 +323,14 @@ export default function AmourToujoursPage() {
                   "Every action carried out under Amour Toujours is tracked in detail. A dedicated page lets you view amounts collected, donations redistributed, and the progress of each initiative. We believe transparency is the key to trust — and trust is the foundation of solidarity."
                 )}
               </p>
+
+              <Link
+                href="/dons"
+                className="inline-flex items-center gap-2 mt-6 bg-amour-red text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-amour-red/90 transition-colors"
+                style={{ fontFamily: "var(--font-body)" }}
+              >
+                {t("🎁 Voir la collecte — Crèche du Château", "🎁 View collection — Crèche du Château")}
+              </Link>
             </Card>
           </motion.div>
         </Section>
@@ -347,33 +362,54 @@ export default function AmourToujoursPage() {
                   <tbody className="divide-y divide-border">
                     <tr>
                       <td className="py-3 pr-4 font-semibold text-foreground whitespace-nowrap">
-                        {t(
-                          "Association des commerçants de Saint-Barnabé",
-                          "Saint-Barnabé Shopkeepers Association"
-                        )}
+                        {t("Café des Entrepreneurs", "Entrepreneurs Café")}
                       </td>
                       <td className="py-3 text-muted-foreground">
-                        saintbarnabecommerces.com
+                        <a href="https://maps.app.goo.gl/XmNwQUV2LKwwVjqw8" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">Ingrid de Marrou</a>
                       </td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 pr-4 font-semibold text-foreground whitespace-nowrap">
-                        {t("Contact local", "Local contact")}
+                      <td className="py-3 text-muted-foreground">
+                        <span className="inline-block bg-village-green/15 text-village-green text-xs font-semibold px-2 py-0.5 rounded-full">
+                          {t("Validé", "Confirmed")}
+                        </span>
                       </td>
-                      <td className="py-3 text-muted-foreground">Ingril Marrou</td>
                     </tr>
                     <tr>
                       <td className="py-3 pr-4 font-semibold text-foreground whitespace-nowrap">
                         {t("Partenaire solidaire", "Solidarity partner")}
                       </td>
-                      <td className="py-3 text-muted-foreground">Djonga Family</td>
+                      <td className="py-3 text-muted-foreground">
+                        <a href="https://www.facebook.com/djongafamily" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">Djonga Family</a> — {t("échanges d'idées", "exchanging ideas")}
+                      </td>
+                      <td className="py-3 text-muted-foreground">
+                        <span className="inline-block bg-amber-100 text-amber-700 text-xs font-semibold px-2 py-0.5 rounded-full">
+                          {t("En cours", "In progress")}
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 pr-4 font-semibold text-foreground whitespace-nowrap">
+                        {t("Dégustations vin", "Wine tastings")}
+                      </td>
+                      <td className="py-3 text-muted-foreground">
+                        <a href="https://simplementvin.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">Tout Simplement Vin</a> — Meriem
+                      </td>
+                      <td className="py-3 text-muted-foreground">
+                        <span className="inline-block bg-amber-100 text-amber-700 text-xs font-semibold px-2 py-0.5 rounded-full">
+                          {t("En cours", "In progress")}
+                        </span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-3 pr-4 font-semibold text-foreground whitespace-nowrap">
                         {t("Collecte culturelle", "Cultural collection")}
                       </td>
                       <td className="py-3 text-muted-foreground">
-                        {t("Librairie partenaire", "Partner bookshop")}
+                        Arcadia — Emmanuel
+                      </td>
+                      <td className="py-3 text-muted-foreground">
+                        <span className="inline-block bg-amber-100 text-amber-700 text-xs font-semibold px-2 py-0.5 rounded-full">
+                          {t("En cours", "In progress")}
+                        </span>
                       </td>
                     </tr>
                   </tbody>
@@ -435,6 +471,14 @@ export default function AmourToujoursPage() {
                   )}
                 </li>
               </ul>
+
+              <Link
+                href="/dons"
+                className="inline-flex items-center gap-2 mt-6 bg-white text-amour-red font-semibold px-6 py-3 rounded-full hover:bg-white/90 transition-colors"
+                style={{ fontFamily: "var(--font-body)" }}
+              >
+                {t("🎁 Soutenir la Crèche du Château", "🎁 Support La Crèche du Château")}
+              </Link>
             </div>
           </motion.div>
         </Section>
