@@ -105,8 +105,8 @@ export default function AmourToujoursPage() {
             style={{ fontFamily: "var(--font-body)" }}
           >
             {t(
-              "Une mobilisation citoyenne dans les 11e et 12e arrondissements de Marseille pour renforcer la solidarité de proximité.",
-              "A grassroots mobilisation in Marseille's 11th & 12th arrondissements to strengthen local solidarity."
+              "Une mobilisation citoyenne dans le 12e arrondissement de Marseille — Montolivet, Saint-Julien, Beaumont, Saint-Barnabé et Bois-Luzy — pour renforcer la solidarité de proximité.",
+              "A grassroots mobilisation in Marseille's 12th arrondissement — Montolivet, Saint-Julien, Beaumont, Saint-Barnabé and Bois-Luzy — to strengthen local solidarity."
             )}
           </p>
         </div>
@@ -134,8 +134,8 @@ export default function AmourToujoursPage() {
                 style={{ fontFamily: "var(--font-body)" }}
               >
                 {t(
-                  "Amour Toujours est une initiative de solidarité locale née dans le quartier de Saint-Barnabé à Marseille. Notre mission : créer une dynamique d'entraide entre habitants, commerçants et entrepreneurs du quartier. Nous croyons qu'un territoire plus solidaire se construit par des actions concrètes, régulières et transparentes — des dîners partagés aux collectes de dons, en passant par des rencontres entre entrepreneurs engagés. Chaque action est pensée pour rapprocher les gens et répondre aux besoins réels des familles en difficulté.",
-                  "Amour Toujours is a local solidarity initiative born in the Saint-Barnabé neighbourhood of Marseille. Our mission: to create a dynamic of mutual aid between residents, shopkeepers, and local entrepreneurs. We believe that a more united community is built through concrete, regular, and transparent actions — from shared dinners to donation drives, to meetups between engaged entrepreneurs. Every action is designed to bring people closer and address the real needs of families in difficulty."
+                  "Amour Toujours est une initiative de solidarité locale ancrée dans le 12e arrondissement de Marseille, au cœur des quartiers de Montolivet, Saint-Julien, Beaumont, Saint-Barnabé et Bois-Luzy. Notre mission : créer une dynamique d'entraide entre habitants, commerçants et entrepreneurs du quartier. Nous croyons qu'un territoire plus solidaire se construit par des actions concrètes, régulières et transparentes — des dîners partagés aux collectes de dons, en passant par des rencontres entre entrepreneurs engagés. Chaque action est pensée pour rapprocher les gens et renforcer les liens entre les habitants du quartier.",
+                  "Amour Toujours is a local solidarity initiative rooted in Marseille's 12th arrondissement, at the heart of the Montolivet, Saint-Julien, Beaumont, Saint-Barnabé and Bois-Luzy neighbourhoods. Our mission: to create a dynamic of mutual aid between residents, shopkeepers, and local entrepreneurs. We believe that a more united community is built through concrete, regular, and transparent actions — from shared dinners to donation drives, to meetups between engaged entrepreneurs. Every action is designed to bring people closer and strengthen the bonds between neighbourhood residents."
                 )}
               </p>
 
@@ -194,8 +194,8 @@ export default function AmourToujoursPage() {
                   style={{ fontFamily: "var(--font-body)" }}
                 >
                   {t(
-                    "Un dîner communautaire ouvert à tous les habitants du quartier pour partager un repas, se rencontrer et collecter des fonds pour les familles dans le besoin.",
-                    "A community dinner open to all neighbourhood residents to share a meal, meet one another, and raise funds for families in need."
+                    "Un dîner communautaire ouvert à tous les habitants du quartier pour partager un repas, se rencontrer et soutenir les actions solidaires locales.",
+                    "A community dinner open to all neighbourhood residents to share a meal, meet one another, and support local solidarity actions."
                   )}
                 </p>
                 <Link
@@ -203,7 +203,7 @@ export default function AmourToujoursPage() {
                   className="inline-flex items-center gap-1 bg-amour-red text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-amour-red/90 transition-colors"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
-                  {t("🍽️ Samedi 6 juin — Parc de la Moline", "🍽️ Saturday June 6th — Parc de la Moline")}
+                  {t("🍽️ Samedi 6 juin — Terrasse en Ville", "🍽️ Saturday June 6th — Terrasse en Ville")}
                 </Link>
               </Card>
 
@@ -227,8 +227,8 @@ export default function AmourToujoursPage() {
                   style={{ fontFamily: "var(--font-body)" }}
                 >
                   {t(
-                    "Chaque année à Noël, des bacs roses sont installés chez les commerçants partenaires du quartier pour collecter des dons (jouets, vêtements, produits d'hygiène) redistribués aux familles dans le besoin.",
-                    "Every year at Christmas, pink bins are placed in partner shops throughout the neighbourhood to collect donations (toys, clothing, hygiene products) redistributed to families in need."
+                    "Chaque année à Noël, des bacs roses sont installés chez les commerçants partenaires du quartier pour collecter des dons (jouets, vêtements, produits d'hygiène) redistribués aux familles du quartier.",
+                    "Every year at Christmas, pink bins are placed in partner shops throughout the neighbourhood to collect donations (toys, clothing, hygiene products) redistributed to neighbourhood families."
                   )}
                 </p>
               </Card>

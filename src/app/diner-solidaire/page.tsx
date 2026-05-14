@@ -69,7 +69,7 @@ export default function DinerSolidairePage() {
                   {t("Samedi 6 juin 2026", "Saturday, June 6th 2026")}
                 </p>
                 <p className="text-base md:text-lg text-white/80 mt-1">
-                  18h — 21h · Parc de la Moline
+                  18h — 21h · Terrasse en Ville
                 </p>
               </div>
               <div className="pt-4">
@@ -99,8 +99,8 @@ export default function DinerSolidairePage() {
             style={{ fontFamily: "var(--font-body)" }}
           >
             {t(
-              "Un grand dîner en plein air pour rassembler les habitants du quartier autour d'un repas partagé, renforcer les liens de solidarité et collecter des fonds pour les familles dans le besoin.",
-              "A large open-air dinner to bring neighbourhood residents together around a shared meal, strengthen solidarity bonds, and raise funds for families in need."
+              "Un grand dîner en plein air pour rassembler les habitants du quartier autour d'un repas partagé, renforcer les liens de solidarité et soutenir les actions solidaires locales.",
+              "A large open-air dinner to bring neighbourhood residents together around a shared meal, strengthen solidarity bonds, and support local solidarity actions."
             )}
           </p>
         </motion.div>
@@ -131,7 +131,7 @@ export default function DinerSolidairePage() {
 
           {/* Location */}
           <a
-            href="https://maps.app.goo.gl/parc-de-la-moline"
+            href="https://maps.app.goo.gl/terrasse-en-ville"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-2xl bg-card border border-border p-6 text-center shadow-sm hover:shadow-md transition-shadow"
@@ -141,7 +141,7 @@ export default function DinerSolidairePage() {
               className="font-semibold text-foreground text-sm"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              Parc de la Moline
+              Terrasse en Ville
             </p>
             <p
               className="text-muted-foreground text-xs mt-1 underline"
@@ -239,8 +239,8 @@ export default function DinerSolidairePage() {
                   </p>
                   <p className="text-white/80 mt-1">
                     {t(
-                      "Jeux pour les enfants, musique, échanges entre voisins et présentation des actions solidaires du quartier. Collecte de fonds pour les familles dans le besoin.",
-                      "Games for children, music, exchanges between neighbours, and presentation of the neighbourhood's solidarity actions. Fundraising for families in need."
+                      "Jeux pour les enfants, musique, échanges entre voisins et présentation des actions solidaires du quartier. Collecte de fonds pour les actions du quartier.",
+                      "Games for children, music, exchanges between neighbours, and presentation of the neighbourhood's solidarity actions. Fundraising for neighbourhood initiatives."
                     )}
                   </p>
                 </div>
@@ -284,8 +284,8 @@ export default function DinerSolidairePage() {
                 <TreePine className="w-5 h-5 text-amour-red flex-shrink-0 mt-0.5" />
                 <p>
                   {t(
-                    "Le dîner se déroule en plein air au Parc de la Moline, un cadre verdoyant et familial au cœur du quartier.",
-                    "The dinner takes place outdoors at Parc de la Moline, a green and family-friendly setting in the heart of the neighbourhood."
+                    "Le dîner se déroule à la Terrasse en Ville, un cadre convivial au cœur du quartier.",
+                    "The dinner takes place at Terrasse en Ville, a friendly setting in the heart of the neighbourhood."
                   )}
                 </p>
               </div>
@@ -331,8 +331,8 @@ export default function DinerSolidairePage() {
               <li>
                 <span className="font-bold text-amour-red">2. </span>
                 {t(
-                  "Rendez-vous au Parc de la Moline le samedi 6 juin à partir de 18h.",
-                  "Come to Parc de la Moline on Saturday June 6th from 6 PM."
+                  "Rendez-vous à la Terrasse en Ville le samedi 6 juin à partir de 18h.",
+                  "Come to Terrasse en Ville on Saturday June 6th from 6 PM."
                 )}
               </li>
               <li>
