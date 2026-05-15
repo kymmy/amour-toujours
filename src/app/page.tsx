@@ -134,8 +134,8 @@ export default function AmourToujoursPage() {
                 style={{ fontFamily: "var(--font-body)" }}
               >
                 {t(
-                  "Amour Toujours est une initiative de solidarité locale née dans le quartier de Saint-Barnabé à Marseille. Notre mission : créer une dynamique d'entraide entre habitants, commerçants et entrepreneurs du quartier. Nous croyons qu'un territoire plus solidaire se construit par des actions concrètes, régulières et transparentes — des dîners partagés aux collectes de dons, en passant par des rencontres entre entrepreneurs engagés. Chaque action est pensée pour rapprocher les gens et répondre aux besoins réels des familles en difficulté.",
-                  "Amour Toujours is a local solidarity initiative born in the Saint-Barnabé neighbourhood of Marseille. Our mission: to create a dynamic of mutual aid between residents, shopkeepers, and local entrepreneurs. We believe that a more united community is built through concrete, regular, and transparent actions — from shared dinners to donation drives, to meetups between engaged entrepreneurs. Every action is designed to bring people closer and address the real needs of families in difficulty."
+                  "Amour Toujours dynamise les quartiers de Montolivet, Saint-Julien, Beaumont et Bois-Luzy. Notre objectif : rassembler les jeunes parents, les commerçants et les habitants autour d'actions concrètes — dîners partagés, collectes, rencontres — pour créer un vrai réseau d'entraide locale.",
+                  "Amour Toujours energizes the neighbourhoods of Montolivet, Saint-Julien, Beaumont and Bois-Luzy. Our goal: to bring together young parents, shopkeepers and residents around concrete actions — shared dinners, donation drives, meetups — to build a real local support network."
                 )}
               </p>
 
